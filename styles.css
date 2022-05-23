@@ -14,3 +14,7 @@ img{
 .wrapper-list{
     text-align: start;
 }
+
+#wrapper-all{
+    width: 1000px;
+}
