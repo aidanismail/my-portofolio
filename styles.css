@@ -7,6 +7,19 @@ body{
     font-family:'Roboto Flex', sans-serif;
 }
 
+img::selection{
+    color: none;
+    background: none;
+}
+
+.fotoProject{
+    transition: transform .2s
+}
+
+.fotoProject:hover{
+    transform: scale(1.1)
+}
+
 img{
     width: 25rem;
 }
@@ -17,4 +30,46 @@ img{
 
 #wrapper-all{
     width: 1000px;
+    background-color: beige;
+}
+
+#img-2{
+    display: none;
+}
+
+#img-3{
+    display: none;
+}
+
+#img-4{
+    display: none;
+}
+
+i{
+    cursor: pointer;
+}
+
+hr{
+    width: 50rem;
+    background: black;
+    height: 2px;
+}
+
+@media only screen and  (max-width:575px){
+    #wrapper-all{
+        width: 30rem;
+    }
+    
+}
+@media only screen and  (max-width:485px){
+    #wrapper-all{
+        width: 25rem;
+    }
+    
+}
+@media only screen and  (max-width:320px){
+    #wrapper-all{
+        width: 20rem;
+    }
+    
 }
