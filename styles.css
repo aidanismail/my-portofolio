@@ -12,13 +12,7 @@ img::selection{
     background: none;
 }
 
-.fotoProject{
-    transition: transform .2s
-}
 
-.fotoProject:hover{
-    transform: scale(1.1)
-}
 
 img{
     width: 25rem;
@@ -47,6 +41,10 @@ img{
 
 i{
     cursor: pointer;
+    opacity: 0.7;
+}
+i:hover{
+    opacity: 1.0;
 }
 
 hr{
@@ -54,6 +52,16 @@ hr{
     background: black;
     height: 2px;
 }
+    
+.fotoProject{
+        transition: transform .3s
+    }
+    
+.fotoProject:hover{
+        transform: scale(1.1)
+    }
+
+
 
 @media only screen and  (max-width:575px){
     #wrapper-all{
