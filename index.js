@@ -6,11 +6,11 @@ function action(panah) {
   if (panah === "kiri") {
     i--;
     if (i <= 0) {
-      i = 4;
+      i = 5;
     }
   } else if (panah === "kanan") {
     i++;
-    if (i > 4) {
+    if (i > 5) {
       i = 1;
     }
   }
