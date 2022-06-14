@@ -1,86 +1,95 @@
-*{
-    margin: 0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family:'Roboto Flex', sans-serif;
-    background-color: #6886E3;
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background-image: linear-gradient(
+    to right bottom,
+    #de74af,
+    #d173b8,
+    #c074c1,
+    #ae75c8,
+    #9877ce,
+    #7b87df,
+    #5696ea,
+    #15a3ee,
+    #00bdf0,
+    #00d5e7,
+    #63e9d9,
+    #a3facd
+  );
 }
 
-img::selection{
-    color: none;
-    background: none;
+img::selection {
+  color: none;
+  background: none;
 }
 
+img {
+  width: 25rem;
+}
 
+.wrapper-list {
+  text-align: start;
+}
 
-img{
+#wrapper-all {
+  width: 1000px;
+  background-color: rgb(245, 245, 220, 0.9);
+}
+
+#img-2 {
+  display: none;
+}
+
+#img-3 {
+  display: none;
+}
+
+#img-4 {
+  display: none;
+}
+#img-5 {
+  display: none;
+}
+i {
+  cursor: pointer;
+  opacity: 0.5;
+}
+i:hover {
+  opacity: 1;
+}
+
+hr {
+  width: 50rem;
+  background: black;
+  height: 2px;
+}
+
+.fotoProject {
+  transition: transform 0.3s;
+}
+
+.fotoProject:hover {
+  transform: scale(1.1);
+}
+#socmed {
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 575px) {
+  #wrapper-all {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 485px) {
+  #wrapper-all {
     width: 25rem;
+  }
 }
-
-.wrapper-list{
-    text-align: start;
-}
-
-#wrapper-all{
-    width: 1000px;
-    background-color: beige;
-}
-
-#img-2{
-    display: none;
-}
-
-#img-3{
-    display: none;
-}
-
-#img-4{
-    display: none;
-}
-#img-5{
-    display: none;
-}
-i{
-    cursor: pointer;
-    opacity: 0.7;
-}
-i:hover{
-    opacity: 1.0;
-}
-
-hr{
-    width: 50rem;
-    background: black;
-    height: 2px;
-}
-    
-.fotoProject{
-        transition: transform .3s
-    }
-    
-.fotoProject:hover{
-        transform: scale(1.1)
-    }
-
-
-
-@media only screen and  (max-width:575px){
-    #wrapper-all{
-        width: 30rem;
-    }
-    
-}
-@media only screen and  (max-width:485px){
-    #wrapper-all{
-        width: 25rem;
-    }
-    
-}
-@media only screen and  (max-width:320px){
-    #wrapper-all{
-        width: 20rem;
-    }
-    
+@media only screen and (max-width: 320px) {
+  #wrapper-all {
+    width: 20rem;
+  }
 }
