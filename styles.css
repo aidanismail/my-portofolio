@@ -57,9 +57,11 @@ img {
 i {
   cursor: pointer;
   opacity: 0.5;
+  transition: transform 0.4s;
 }
 i:hover {
   opacity: 1;
+  transform: scale(1.3);
 }
 
 hr {
@@ -69,7 +71,7 @@ hr {
 }
 
 .fotoProject {
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .fotoProject:hover {
@@ -92,4 +94,18 @@ hr {
   #wrapper-all {
     width: 20rem;
   }
+}
+
+@keyframes pageOnload {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+#wrapper-all {
+  animation: pageOnload 2s;
 }
