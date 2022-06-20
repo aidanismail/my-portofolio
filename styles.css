@@ -20,6 +20,7 @@ body {
     #63e9d9,
     #a3facd
   );
+  animation: pageOnload 1.5s;
 }
 
 img::selection {
@@ -106,6 +107,4 @@ hr {
     transform: rotateX(0deg);
   }
 }
-#wrapper-all {
-  animation: pageOnload 2s;
-}
+
